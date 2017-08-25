@@ -1,3 +1,4 @@
 <p><%= todo_item.content %></p>
+<% # THIS DOESN"T WORK link_to "Delete", todo_list_todo_item_todo_item_path(@todo_list, todo_item.id), :method => :delete, data: { confirm: "Are you silly" } %> 
 
-<% # THIS DOESN"T WORK link_to "Delete", todo_list_todo_item_todo_item_path(@todo_list, todo_item.id), :method => :delete, data: { confirm: "Are you silly" } %>
+<%= #THIS DOESNT WORK link_to "Mark as Complete", complete_todo_list_todo_item_path(@todo_list, todo.item.id), method: :patch %>
